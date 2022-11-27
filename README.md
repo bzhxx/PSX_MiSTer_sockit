@@ -1,4 +1,4 @@
-# [Playstation](https://en.wikipedia.org/wiki/PlayStation_(console)) for [MiSTer Platform variant sockit](https://github.com/MiSTer-devel/Main_MiSTer/wiki)
+# [Playstation](https://en.wikipedia.org/wiki/PlayStation_(console)) for [MiSTer Platform on sockit](https://github.com/MiSTer-devel/Main_MiSTer/wiki)
 
 ## Hardware Requirements
 SDRAM of any size is required.
