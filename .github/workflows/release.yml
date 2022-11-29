@@ -38,7 +38,7 @@ jobs:
           mkdir -p releases
           cp output_files/PSX.rbf releases/PSX_${{ steps.version.outputs.version }}.rbf
           ( cd output_files && sha256sum PSX.rbf > ../releases/PSX_${{ steps.version.outputs.version }}.rbf.sha256 )
-        
+          
       # 5 - Create a new GitHub release and upload the distribution artifacts
       - name: Create a new GitHub release
         uses: softprops/action-gh-release@v0.1.14
@@ -47,5 +47,3 @@ jobs:
           files: |
             releases/PSX_${{ steps.version.outputs.version }}.rbf
             releases/PSX_${{ steps.version.outputs.version }}.rbf.sha256
-            
-    
