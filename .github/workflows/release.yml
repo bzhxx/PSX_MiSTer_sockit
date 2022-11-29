@@ -31,7 +31,8 @@ jobs:
       # 3 - Get current version for tagging binary
       - name: Get the version
         id: version
-        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/} # Get the version from the tag
+        #run: echo ::set-output name=version::${GITHUB_REF#refs/tags/} # Get the version from the tag
+        run: echo "::set-output name=version::$(date +'%Y%m%d')"
       # 4 - Create tag with version and SHA256 checksum
       - name: Copy, tag with version and create SHA256 checksum
         run: |
